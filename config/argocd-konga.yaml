@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://lakshanmamalgaha96.github.io/konga-helm
-    targetRevision: "1.1.0"
+    repoURL: https://github.com/pantsel/konga/tree/master/charts/konga
+    targetRevision: "1.0.0"
     chart: konga
     helm:
       values: |
