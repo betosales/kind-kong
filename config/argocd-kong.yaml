@@ -7,13 +7,13 @@ spec:
   project: default
   source:
     repoURL: https://charts.konghq.com
-    targetRevision: "2.8.0"
+    targetRevision: "2.26.4"
     chart: kong
     helm:
       parameters:
-      - name: "ingressController.installCRDs"
-        value: "false"
-        forceString: true # ensures that value is treated as a string
+        - name: "ingressController.installCRDs"
+          value: "false"
+          forceString: true # ensures that value is treated as a string
       values: |
         podAnnotations:
           prometheus.io/scrape: "true" # Ask Prometheus to scrape the
