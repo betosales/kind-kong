@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/metallb/metallb
-    targetRevision: "0.12.1"
+    repoURL: https://github.com/metallb/metallb.git
+    targetRevision: "0.13.10"
     chart: metallb
     helm:
       values: |
