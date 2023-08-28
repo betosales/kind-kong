@@ -22,6 +22,10 @@ spec:
             hostname: kong-admin.local
             ingressClassName: kong
             pathType: Prefix
+          tls:
+            enabled: false
+          http:
+            enabled: true
         podAnnotations:
           prometheus.io/scrape: "true" # Ask Prometheus to scrape the
           prometheus.io/port: "8100"   # Kong pods for metrics
