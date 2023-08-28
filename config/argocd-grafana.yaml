@@ -6,14 +6,14 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://grafana.github.io/helm-charts
+    repoURL: https://github.com/grafana/helm-charts
     targetRevision: "6.28.0"
     chart: grafana
     helm:
       parameters:
-      - name: "adminPassword"
-        value: "kong"
-        forceString: true # ensures that value is treated as a string
+        - name: "adminPassword"
+          value: "kong"
+          forceString: true # ensures that value is treated as a string
       values: |
         persistence:
           enabled: true  # enable persistence using Persistent Volumes
