@@ -15,7 +15,7 @@ spec:
           enabled: true
           ingressClassName: kong
           hosts:
-          - host: konga.local
+          - konga.local
 
   destination:
     server: https://kubernetes.default.svc
