@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/pantsel/konga.git
     targetRevision: "0.14.19"
-    chart: konga
+    path: charts/konga
 
   destination:
     server: https://kubernetes.default.svc
