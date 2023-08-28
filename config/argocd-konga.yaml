@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/pantsel/konga.git
-    targetRevision: "1.0.0"
-    chart: charts/konga
+    repoURL: https://lakshanmamalgaha96.github.io/konga-helm
+    targetRevision: "1.1.0"
+    chart: konga
 
   destination:
     server: https://kubernetes.default.svc
