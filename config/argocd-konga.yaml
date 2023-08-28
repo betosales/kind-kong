@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/pantsel/konga/tree/master/charts/konga
-    targetRevision: "1.0.0"
-    chart: konga
+    repoURL: https://github.com/betosales/kind-kong.git
+    targetRevision: HEAD
+    path: apps/konga
     helm:
       values: |
         ingress:
@@ -16,7 +16,6 @@ spec:
           ingressClassName: kong
           hosts:
           - konga.local
-
   destination:
     server: https://kubernetes.default.svc
     namespace: kong
