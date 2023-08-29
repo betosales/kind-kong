@@ -6,7 +6,6 @@ metadata:
   labels:
     app: bar
 spec:
-  replicas: 4
   ports:
     - port: 80
       targetPort: 5678
