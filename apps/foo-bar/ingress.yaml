@@ -8,19 +8,19 @@ metadata:
 spec:
   ingressClassName: kong
   rules:
-  - http:
-      paths:
-      - path: /foo
-        pathType: Prefix
-        backend:
-          service:
-            name: foo-service
-            port:
-              number: 80
-      - path: /bar
-        pathType: Prefix
-        backend:
-          service:
-            name: bar-service
-            port:
-              number: 80
+    - http:
+        paths:
+          - path: /foo
+            pathType: Prefix
+            backend:
+              service:
+                name: foo-service
+                port:
+                  number: 80
+          - path: /bar
+            pathType: Prefix
+            backend:
+              service:
+                name: bar-service
+                port:
+                  number: 80

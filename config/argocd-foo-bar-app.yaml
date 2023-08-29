@@ -5,7 +5,6 @@ metadata:
   namespace: argocd
 spec:
   project: default
-  replicas: 4
   source:
     repoURL: https://github.com/betosales/kind-kong.git
     targetRevision: HEAD
